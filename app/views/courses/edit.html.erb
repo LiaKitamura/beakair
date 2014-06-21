@@ -1,0 +1,11 @@
+<h1>Edit <%= @course %></h1>
+
+<% form_for(@course) do |f| %>
+  <div>
+    <%= f.label(:name) %>
+    <%= f.text_field(:name) %>
+  </div>
+  <div>
+    <%= f.submit('Update') %>
+  </div>
+<% end %>

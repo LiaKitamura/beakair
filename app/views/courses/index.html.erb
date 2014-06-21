@@ -1,0 +1,6 @@
+<h1>Course Schedule</h1>
+<% @courses.each do |course| %>
+  <h3><%= link_to(course.name, course_path(course.id)) %></h3>
+  <p><%=course.start_date %></p>
+  <p><%= course.end_date %></p>
+<% end %>

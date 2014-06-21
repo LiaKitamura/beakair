@@ -1,0 +1,6 @@
+<h1>Course</h1>
+<h3><%= @course.name %></h3>
+<p><%= @course.start_date %></p>
+<p><%= @course.end_date %></p>
+<%= link_to('Edit course', edit_course_path) %>
+<%= link_to('All Courses', courses_path) %>
